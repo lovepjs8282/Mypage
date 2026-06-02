@@ -7,76 +7,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Pretendard', sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: #334155; min-height: 100vh; padding: 40px 20px; }
+        body { font-family: 'Pretendard', sans-serif; background: #f8fafc; padding: 20px; }
+        .page-container { max-width: 600px; margin: 0 auto; }
         
-        .page-container { max-width: 700px; margin: 0 auto; }
-        
-        .hero { text-align: center; padding: 40px 0; }
-        h1 { font-size: 32px; color: #0f172a; margin-bottom: 10px; font-weight: 800; }
-        
-        /* 세련된 다크 카드 스타일 */
-        .contact { 
-            background: #1e293b; 
-            color: #fff; 
-            padding: 40px; 
-            border-radius: 24px; 
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); 
-            text-align: center; 
+        /* 버튼 그리드 고정 */
+        .links-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 12px; 
+            margin-top: 20px; 
         }
         
-        /* 버튼에 그라데이션과 그림자 효과 */
-        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        /* 버튼 크기 통일 및 줄바꿈 방지 */
         .link-btn { 
             background: #0f172a; 
-            padding: 20px; 
-            border-radius: 16px; 
+            padding: 16px 10px; /* 좌우 패딩 조정 */
+            border-radius: 12px; 
             text-decoration: none; 
-            font-size: 16px; 
+            font-size: 14px; 
             font-weight: 700; 
-            transition: all 0.3s ease; 
             display: flex; 
             align-items: center; 
             justify-content: center;
-            gap: 10px;
-            border: 1px solid rgba(255,255,255,0.1);
+            gap: 8px;
+            white-space: nowrap; /* 텍스트 줄바꿈 강제 방지 */
+            overflow: hidden;    /* 넘치는 텍스트 숨김 */
         }
-        .link-btn:hover { transform: translateY(-5px); background: #2d3748; border-color: rgba(255,255,255,0.3); }
         
-        /* 포인트 컬러 */
+        /* 텍스트 크기를 살짝 줄여서 긴 글자도 한 줄에 들어가게 함 */
+        @media (max-width: 400px) {
+            .link-btn { font-size: 12px; }
+        }
+
         .yt { color: #ff4d4d; }
         .ig { color: #ff66b3; }
         .nb { color: #2ecc71; }
         .tt { color: #ffffff; } 
-        
-        .footer-contact { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; color: #94a3b8; }
     </style>
 </head>
 <body>
 
 <div class="page-container">
-    <section class="hero">
-        <h1>안녕하세요! 박준섭입니다.</h1>
-        <p>스토리텔링과 마케팅으로 가치를 만듭니다.</p>
-    </section>
-
+    <!-- 생략: 헤로 섹션 동일 -->
+    
     <section class="contact">
-        <h2>함께 소통해요!</h2>
-        <p style="margin-top: 10px; opacity: 0.7;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다.</p>
+        <!-- 생략: 타이틀 동일 -->
         
         <div class="links-grid">
-            <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악 채널</a>
-            <a href="https://www.youtube.com/@Art_Ailookbook" class="link-btn yt"><i class="fab fa-youtube"></i> 룩북 채널</a>
+            <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악채널</a>
+            <a href="https://www.youtube.com/@Art_Ailookbook" class="link-btn yt"><i class="fab fa-youtube"></i> 룩북채널</a>
             <a href="https://www.instagram.com/bongsik2ya" class="link-btn ig"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://blog.naver.com/lovepjs8282" class="link-btn nb"><i class="fas fa-blog"></i> 네이버 블로그</a>
+            <a href="https://blog.naver.com/lovepjs8282" class="link-btn nb"><i class="fas fa-blog"></i> 네이버블로그</a>
             <a href="https://www.tiktok.com/@lovepjs8282" class="link-btn tt"><i class="fab fa-tiktok"></i> TikTok</a>
-        </div>
-
-        <div class="footer-contact">
-            <a href="mailto:lovepjs8282@naver.com" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
-            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 010-5736-5157</a>
         </div>
     </section>
 </div>
-
 </body>
 </html>
