@@ -8,27 +8,30 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.5; }
-        .page-container { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; }
         
-        section { margin-bottom: 20px; }
-        .hero { text-align: center; padding: 40px 10px; }
-        h1 { font-size: 28px; color: #1e293b; margin-bottom: 10px; }
+        /* PC 환경에서도 가독성을 위해 max-width를 조금 늘리고 폰트 기본 크기를 조정 */
+        .page-container { width: 90%; max-width: 700px; margin: 0 auto; padding: 40px 20px; }
         
-        .contact { background: #1e293b; color: #fff; padding: 30px 20px; border-radius: 12px; text-align: center; }
-        .contact h2 { margin-bottom: 10px; }
+        section { margin-bottom: 30px; }
+        .hero { text-align: center; padding: 60px 20px; }
+        h1 { font-size: 36px; color: #1e293b; margin-bottom: 15px; }
+        p { font-size: 18px; }
         
-        /* 버튼 배경을 연한 회색(#f1f5f9)으로 수정 */
-        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
-        .link-btn { background: #f1f5f9; padding: 12px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; display: block; }
-        .link-btn:hover { background: #e2e8f0; }
+        .contact { background: #1e293b; color: #fff; padding: 40px 30px; border-radius: 16px; text-align: center; }
+        .contact h2 { margin-bottom: 15px; font-size: 24px; }
+        
+        /* 버튼 크기 확대 및 검은색 계열 배경 적용 */
+        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
+        .link-btn { background: #0f172a; padding: 20px; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: bold; transition: 0.3s; display: block; }
+        .link-btn:hover { background: #1e293b; }
         
         /* 텍스트 컬러 지정 */
         .yt { color: #ff0000; }
         .ig { color: #e1306c; }
         .nb { color: #03c75a; }
-        .tt { color: #000000; } 
+        .tt { color: #ffffff; } 
         
-        .footer-contact { display: flex; justify-content: space-between; margin-top: 25px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 13px; }
+        .footer-contact { display: flex; justify-content: space-between; margin-top: 35px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 15px; }
     </style>
 </head>
 <body>
@@ -36,12 +39,12 @@
 <div class="page-container">
     <section class="hero">
         <h1>안녕하세요! 박준섭입니다.</h1>
-        <p>(해당 페이지는 테스트 페이지입니다.)</p>
+        <p>스토리텔링과 마케팅으로 가치를 만듭니다.</p>
     </section>
 
     <section class="contact">
         <h2>함께 소통해요!</h2>
-        <p style="font-size: 0.9em; opacity: 0.8;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다 :)</p>
+        <p style="font-size: 1em; opacity: 0.8;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다 :)</p>
         
         <div class="links-grid">
             <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악 채널</a>
