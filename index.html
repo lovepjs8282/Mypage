@@ -7,31 +7,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.5; }
+        body { font-family: 'Pretendard', sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); color: #334155; min-height: 100vh; padding: 40px 20px; }
         
-        /* PC 환경에서도 가독성을 위해 max-width를 조금 늘리고 폰트 기본 크기를 조정 */
-        .page-container { width: 90%; max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        .page-container { max-width: 700px; margin: 0 auto; }
         
-        section { margin-bottom: 30px; }
-        .hero { text-align: center; padding: 60px 20px; }
-        h1 { font-size: 36px; color: #1e293b; margin-bottom: 15px; }
-        p { font-size: 18px; }
+        .hero { text-align: center; padding: 40px 0; }
+        h1 { font-size: 32px; color: #0f172a; margin-bottom: 10px; font-weight: 800; }
         
-        .contact { background: #1e293b; color: #fff; padding: 40px 30px; border-radius: 16px; text-align: center; }
-        .contact h2 { margin-bottom: 15px; font-size: 24px; }
+        /* 세련된 다크 카드 스타일 */
+        .contact { 
+            background: #1e293b; 
+            color: #fff; 
+            padding: 40px; 
+            border-radius: 24px; 
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); 
+            text-align: center; 
+        }
         
-        /* 버튼 크기 확대 및 검은색 계열 배경 적용 */
+        /* 버튼에 그라데이션과 그림자 효과 */
         .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 30px; }
-        .link-btn { background: #0f172a; padding: 20px; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: bold; transition: 0.3s; display: block; }
-        .link-btn:hover { background: #1e293b; }
+        .link-btn { 
+            background: #0f172a; 
+            padding: 20px; 
+            border-radius: 16px; 
+            text-decoration: none; 
+            font-size: 16px; 
+            font-weight: 700; 
+            transition: all 0.3s ease; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .link-btn:hover { transform: translateY(-5px); background: #2d3748; border-color: rgba(255,255,255,0.3); }
         
-        /* 텍스트 컬러 지정 */
-        .yt { color: #ff0000; }
-        .ig { color: #e1306c; }
-        .nb { color: #03c75a; }
+        /* 포인트 컬러 */
+        .yt { color: #ff4d4d; }
+        .ig { color: #ff66b3; }
+        .nb { color: #2ecc71; }
         .tt { color: #ffffff; } 
         
-        .footer-contact { display: flex; justify-content: space-between; margin-top: 35px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 15px; }
+        .footer-contact { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 14px; color: #94a3b8; }
     </style>
 </head>
 <body>
@@ -44,7 +61,7 @@
 
     <section class="contact">
         <h2>함께 소통해요!</h2>
-        <p style="font-size: 1em; opacity: 0.8;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다 :)</p>
+        <p style="margin-top: 10px; opacity: 0.7;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다.</p>
         
         <div class="links-grid">
             <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악 채널</a>
@@ -55,8 +72,8 @@
         </div>
 
         <div class="footer-contact">
-            <a href="mailto:lovepjs8282@naver.com" style="color:#fff; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
-            <a href="tel:010-5736-5157" style="color:#fff; text-decoration:none;"><i class="fas fa-phone"></i> 010-5736-5157</a>
+            <a href="mailto:lovepjs8282@naver.com" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
+            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 010-5736-5157</a>
         </div>
     </section>
 </div>
