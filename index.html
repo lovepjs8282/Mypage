@@ -17,11 +17,14 @@
         
         .page-container { max-width: 600px; margin: 0 auto; }
         
-        /* 캐릭터 영역 조정: margin-bottom을 -20px로 조절하여 위치 상승 */
-        .hero { text-align: center; padding-top: 40px; margin-bottom: 0px; position: relative; z-index: 2; }
-        .hero-content { display: flex; justify-content: center; align-items: flex-end; gap: 30px; }
-        .hero img { width: 110px; height: auto; } 
-        h1 { font-size: 26px; color: #0f172a; font-weight: 800; margin-bottom: 5px; }
+        /* 헤더 최적화: 텍스트를 위로 배치하고 간격 조정 */
+        .hero { text-align: center; padding-top: 20px; margin-bottom: -15px; position: relative; z-index: 2; }
+        .hero-text { margin-bottom: 10px; }
+        h1 { font-size: 22px; color: #0f172a; font-weight: 800; white-space: nowrap; } /* 줄바꿈 방지 */
+        .hero-desc { font-size: 0.85em; white-space: nowrap; } /* 줄바꿈 방지 */
+        
+        .hero-content { display: flex; justify-content: center; align-items: flex-end; gap: 15px; }
+        .hero img { width: 100px; height: auto; } 
         
         .contact { 
             background: #1e293b; 
@@ -37,7 +40,7 @@
         .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 30px; }
         .link-btn { 
             background: #0f172a; padding: 16px 10px; border-radius: 12px; text-decoration: none; 
-            font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+            font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center;
             gap: 8px; white-space: nowrap; border: 1px solid rgba(255,255,255,0.1);
             transition: all 0.3s ease;
         }
@@ -59,12 +62,13 @@
 
 <div class="page-container">
     <section class="hero">
+        <!-- 텍스트 영역을 캐릭터 위로 이동 -->
+        <div class="hero-text">
+            <h1>준섭이의 개인 채널</h1>
+            <p class="hero-desc">(테스트 페이지입니다)</p>
+        </div>
         <div class="hero-content">
             <img src="char1.png" alt="캐릭터">
-            <div style="margin-bottom: 20px;">
-                <h1>준섭이의 개인 채널</h1>
-                <p style="font-size: 0.9em;">(테스트 페이지입니다)</p>
-            </div>
             <img src="char2.png" alt="캐릭터">
         </div>
     </section>
