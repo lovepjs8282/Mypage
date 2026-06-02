@@ -12,16 +12,16 @@
             background: radial-gradient(circle at center, #ffffff 0%, #cbd5e1 100%); 
             color: #334155; 
             min-height: 100vh; 
-            padding: 20px; 
+            padding: 10px 20px; /* 상단 패딩을 20px로 대폭 줄임 */
         }
         
         .page-container { max-width: 600px; margin: 0 auto; }
         
-        /* 헤더 영역 수정 */
-        .hero { text-align: center; padding-top: 20px; margin-bottom: -55px; position: relative; z-index: 2; }
+        /* 헤더 영역 수정: padding-top을 줄여 전체를 더 위로 올림 */
+        .hero { text-align: center; padding-top: 10px; margin-bottom: -55px; position: relative; z-index: 2; }
         
-        /* 텍스트 영역: margin-top을 추가하여 캐릭터 높이 중간으로 위치 조정 */
-        .hero-text { margin-top: 40px; margin-bottom: 20px; }
+        /* 텍스트 영역: margin-top을 줄여 제목을 더 위로 올림 */
+        .hero-text { margin-top: 0px; margin-bottom: 20px; }
         
         .hero-content { 
             display: flex; 
@@ -69,7 +69,7 @@
 
 <div class="page-container">
     <section class="hero">
-        <!-- 텍스트 위치를 아래로 내림 -->
+        <!-- 텍스트 위치를 최상단으로 올림 -->
         <div class="hero-text">
             <h1>준섭이의 개인 채널</h1>
             <p class="hero-desc">(테스트 페이지입니다)</p>
