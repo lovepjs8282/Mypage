@@ -12,33 +12,27 @@
             background: radial-gradient(circle at center, #ffffff 0%, #cbd5e1 100%); 
             color: #334155; 
             min-height: 100vh; 
-            padding: 50px 0px; 
+            padding: 50px 50px; /* 상단 패딩을 20px로 대폭 줄임 */
         }
         
         .page-container { max-width: 600px; margin: 0 auto; }
         
-        /* 헤더 영역 수정: 캐릭터와 텍스트를 하나의 flex 컨테이너로 통합 */
-        .hero { 
-            text-align: center; 
-            padding-top: 10px; 
-            margin-bottom: 0px; 
-            position: relative; 
-            z-index: 2; 오후 3:58 2026-06-02
-        }
+        /* 헤더 영역 수정: padding-top을 줄여 전체를 더 위로 올림 */
+        .hero { text-align: center; padding-top: 20px; margin-bottom: 0px; position: relative; z-index: 2; }
+        
+        /* 텍스트 영역: margin-top을 줄여 제목을 더 위로 올림 */
+        .hero-text { margin-top: 0px; margin-bottom: -90px; }
         
         .hero-content { 
             display: flex; 
             justify-content: space-between; 
-            align-items: center; /* 수직 정중앙 정렬 */
+            align-items: flex-end; 
             width: 100%; 
             max-width: 550px; 
             margin: 0 auto; 
         }
         
-        /* 텍스트 영역을 중앙 배치 */
-        .hero-text { flex: 1; text-align: center; }
-        
-        .hero img { width: 120px; height: auto; flex-shrink: 0; } 
+        .hero img { width: 120px; height: auto; } 
         h1 { font-size: 24px; color: #0f172a; font-weight: 800; white-space: nowrap; }
         .hero-desc { font-size: 0.85em; white-space: nowrap; }
         
@@ -75,14 +69,13 @@
 
 <div class="page-container">
     <section class="hero">
+        <!-- 텍스트 위치를 최상단으로 올림 -->
+        <div class="hero-text">
+            <h1>준섭이의 개인 채널</h1>
+            <p class="hero-desc">(테스트 페이지입니다)</p>
+        </div>
         <div class="hero-content">
             <img src="char1.png" alt="캐릭터1">
-            
-            <div class="hero-text">
-                <h1>준섭이의 개인 채널</h1>
-                <p class="hero-desc">(아직 테스트 페이지랍니다)</p>
-            </div>
-            
             <img src="char2.png" alt="캐릭터2">
         </div>
     </section>
@@ -101,7 +94,7 @@
 
         <div class="footer-contact">
             <a href="mailto:lovepjs8282@naver.com" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
-            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 연락하기</a>
+            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 010-5736-5157</a>
         </div>
     </section>
 </div>
