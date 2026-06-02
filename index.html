@@ -17,10 +17,12 @@
         
         .page-container { max-width: 600px; margin: 0 auto; }
         
-        /* 캐릭터 영역: 박스 상단 밀착 및 양 끝 배치 */
-        .hero { text-align: center; padding-top: 20px; margin-bottom: 0px; position: relative; z-index: 2; }
+        /* 헤더 영역 수정 */
+        .hero { text-align: center; padding-top: 20px; margin-bottom: -55px; position: relative; z-index: 2; }
         
-        /* 양 끝으로 벌어지게 설정 */
+        /* 텍스트 영역: margin-top을 추가하여 캐릭터 높이 중간으로 위치 조정 */
+        .hero-text { margin-top: 40px; margin-bottom: 20px; }
+        
         .hero-content { 
             display: flex; 
             justify-content: space-between; 
@@ -31,8 +33,6 @@
         }
         
         .hero img { width: 120px; height: auto; } 
-        
-        .hero-text { margin-bottom: 0px; }
         h1 { font-size: 24px; color: #0f172a; font-weight: 800; white-space: nowrap; }
         .hero-desc { font-size: 0.85em; white-space: nowrap; }
         
@@ -47,7 +47,6 @@
             z-index: 1; 
         }
         
-        /* 기존 버튼 및 하단 스타일 유지 */
         .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 30px; }
         .link-btn { 
             background: #0f172a; padding: 16px 10px; border-radius: 12px; text-decoration: none; 
@@ -70,6 +69,7 @@
 
 <div class="page-container">
     <section class="hero">
+        <!-- 텍스트 위치를 아래로 내림 -->
         <div class="hero-text">
             <h1>준섭이의 개인 채널</h1>
             <p class="hero-desc">(테스트 페이지입니다)</p>
