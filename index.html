@@ -10,21 +10,23 @@
         body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.5; }
         .page-container { width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; }
         
-        /* 간격 좁히기: 섹션 하단 마진을 줄임 */
         section { margin-bottom: 20px; }
-        
         .hero { text-align: center; padding: 40px 10px; }
         h1 { font-size: 28px; color: #1e293b; margin-bottom: 10px; }
         
         .contact { background: #1e293b; color: #fff; padding: 30px 20px; border-radius: 12px; text-align: center; }
         .contact h2 { margin-bottom: 10px; }
         
-        /* 모바일 최적화 그리드 */
+        /* 버튼 스타일 수정 */
         .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
-        .link-btn { background: rgba(255,255,255,0.1); padding: 12px; border-radius: 8px; color: #fff; text-decoration: none; font-size: 14px; transition: 0.3s; }
-        .link-btn:hover { background: rgba(255,255,255,0.2); }
+        .link-btn { padding: 12px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; color: #fff; }
         
-        /* 하단 연락처 */
+        /* 브랜드 컬러 적용 */
+        .yt { background-color: #ff0000; }
+        .ig { background-color: #e1306c; }
+        .nb { background-color: #03c75a; }
+        .tt { background-color: #000000; }
+        
         .footer-contact { display: flex; justify-content: space-between; margin-top: 25px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 13px; }
     </style>
 </head>
@@ -41,11 +43,11 @@
         <p style="font-size: 0.9em; opacity: 0.8;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다 :)</p>
         
         <div class="links-grid">
-            <a href="https://www.youtube.com/@BONG_TOB" class="link-btn"><i class="fab fa-youtube"></i> 음악 채널</a>
-            <a href="https://www.youtube.com/@Art_Ailookbook" class="link-btn"><i class="fab fa-youtube"></i> 룩북 채널</a>
-            <a href="https://www.instagram.com/bongsik2ya" class="link-btn"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://blog.naver.com/lovepjs8282" class="link-btn"><i class="fas fa-blog"></i> 네이버 블로그</a>
-            <a href="https://www.tiktok.com/@lovepjs8282" class="link-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악 채널</a>
+            <a href="https://www.youtube.com/@Art_Ailookbook" class="link-btn yt"><i class="fab fa-youtube"></i> 룩북 채널</a>
+            <a href="https://www.instagram.com/bongsik2ya" class="link-btn ig"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://blog.naver.com/lovepjs8282" class="link-btn nb"><i class="fas fa-blog"></i> 네이버 블로그</a>
+            <a href="https://www.tiktok.com/@lovepjs8282" class="link-btn tt"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
 
         <div class="footer-contact">
