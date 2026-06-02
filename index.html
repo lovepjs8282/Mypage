@@ -12,67 +12,67 @@
             background: radial-gradient(circle at center, #ffffff 0%, #cbd5e1 100%); 
             color: #334155; 
             min-height: 100vh; 
-            padding: 50px 50px; /* 상단 패딩을 20px로 대폭 줄임 */
+            padding: 20px; 
         }
         
-        .page-container { max-width: 600px; margin: 0 auto; }
+        .page-container { max-width: 650px; margin: 0 auto; } /* 컨테이너 폭을 살짝 늘림 */
         
-        /* 헤더 영역 수정: padding-top을 줄여 전체를 더 위로 올림 */
-        .hero { text-align: center; padding-top: 20px; margin-bottom: 0px; position: relative; z-index: 2; }
+        .hero { text-align: center; padding-top: 60px; margin-bottom: 0px; position: relative; z-index: 2; }
         
-        /* 텍스트 영역: margin-top을 줄여 제목을 더 위로 올림 */
-        .hero-text { margin-top: 0px; margin-bottom: -90px; }
+        /* 텍스트 영역 */
+        .hero-text { margin-bottom: -100px; }
         
+        /* 캐릭터 간격을 확실히 벌림 */
         .hero-content { 
             display: flex; 
             justify-content: space-between; 
             align-items: flex-end; 
             width: 100%; 
-            max-width: 550px; 
+            max-width: 600px; /* 캐릭터 컨테이너 폭 확장 */
             margin: 0 auto; 
+            padding: 0 5px;
         }
         
-        .hero img { width: 120px; height: auto; } 
-        h1 { font-size: 24px; color: #0f172a; font-weight: 800; white-space: nowrap; }
-        .hero-desc { font-size: 0.85em; white-space: nowrap; }
+        .hero img { width: 130px; height: auto; } /* 캐릭터 크기 조정 */
+        h1 { font-size: 26px; color: #0f172a; font-weight: 800; white-space: nowrap; }
+        .hero-desc { font-size: 0.9em; margin-top: 5px; }
         
+        /* 박스 크기 확대 */
         .contact { 
             background: #1e293b; 
             color: #fff; 
-            padding: 40px; 
-            border-radius: 24px; 
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2); 
+            padding: 50px 40px; /* 상하 패딩 확대 */
+            border-radius: 30px; 
+            box-shadow: 0 25px 30px -10px rgba(0,0,0,0.3); 
             text-align: center; 
             position: relative; 
             z-index: 1; 
         }
         
-        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 30px; }
+        .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 35px; }
         .link-btn { 
-            background: #0f172a; padding: 16px 10px; border-radius: 12px; text-decoration: none; 
-            font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center;
-            gap: 8px; white-space: nowrap; border: 1px solid rgba(255,255,255,0.1);
+            background: #0f172a; padding: 18px 15px; border-radius: 14px; text-decoration: none; 
+            font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+            gap: 10px; border: 1px solid rgba(255,255,255,0.1);
         }
-        .yt { color: #ff4d4d; }
-        .ig { color: #ff66b3; }
-        .nb { color: #2ecc71; }
-        .tt { color: #ffffff; } 
         
         .footer-contact { 
-            display: flex; justify-content: space-between; margin-top: 40px; 
-            padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); 
-            font-size: 13px; color: #94a3b8; 
+            display: flex; justify-content: space-between; margin-top: 50px; 
+            padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); 
+            font-size: 14px; color: #94a3b8; 
         }
+        
+        /* 포인트 컬러 */
+        .yt { color: #ff4d4d; } .ig { color: #ff66b3; } .nb { color: #2ecc71; } .tt { color: #ffffff; }
     </style>
 </head>
 <body>
 
 <div class="page-container">
     <section class="hero">
-        <!-- 텍스트 위치를 최상단으로 올림 -->
         <div class="hero-text">
             <h1>준섭이의 개인 채널</h1>
-            <p class="hero-desc">(테스트 페이지입니다)</p>
+            <p class="hero-desc">(아직 테스트 페이지랍니다)</p>
         </div>
         <div class="hero-content">
             <img src="char1.png" alt="캐릭터1">
@@ -82,7 +82,7 @@
 
     <section class="contact">
         <h2 style="margin-bottom: 10px;">함께 소통해요 :)</h2>
-        <p style="opacity: 0.7; font-size: 0.9em;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다.</p>
+        <p style="opacity: 0.8; font-size: 1em; margin-bottom: 20px;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다.</p>
         
         <div class="links-grid">
             <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악채널</a>
@@ -94,7 +94,7 @@
 
         <div class="footer-contact">
             <a href="mailto:lovepjs8282@naver.com" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
-            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 010-5736-5157</a>
+            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 전화하기</a>
         </div>
     </section>
 </div>
