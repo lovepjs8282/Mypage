@@ -22,33 +22,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             padding: 20px; 
         }
         
-        .page-container { max-width: 650px; margin: 0 auto; } /* 컨테이너 폭을 살짝 늘림 */
+        .page-container { max-width: 650px; margin: 0 auto; }
         
         .hero { text-align: center; padding-top: 60px; margin-bottom: 0px; position: relative; z-index: 2; }
         
-        /* 텍스트 영역 */
         .hero-text { margin-bottom: -100px; }
         
-        /* 캐릭터 간격을 확실히 벌림 */
         .hero-content { 
             display: flex; 
             justify-content: space-between; 
             align-items: flex-end; 
             width: 100%; 
-            max-width: 600px; /* 캐릭터 컨테이너 폭 확장 */
+            max-width: 600px; 
             margin: 0 auto; 
             padding: 0 5px;
         }
         
-        .hero img { width: 130px; height: auto; } /* 캐릭터 크기 조정 */
+        .hero img { width: 130px; height: auto; }
         h1 { font-size: 26px; color: #0f172a; font-weight: 800; white-space: nowrap; }
         .hero-desc { font-size: 0.9em; margin-top: 5px; }
         
-        /* 박스 크기 확대 */
         .contact { 
             background: #1e293b; 
             color: #fff; 
-            padding: 50px 40px; /* 상하 패딩 확대 */
+            padding: 50px 40px; 
             border-radius: 30px; 
             box-shadow: 0 25px 30px -10px rgba(0,0,0,0.3); 
             text-align: center; 
@@ -69,7 +66,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 14px; color: #94a3b8; 
         }
         
-        /* 포인트 컬러 */
         .yt { color: #ff4d4d; } .ig { color: #ff66b3; } .nb { color: #2ecc71; } .tt { color: #ffffff; }
     </style>
 </head>
@@ -95,16 +91,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p style="opacity: 0.8; font-size: 1em; margin-bottom: 20px;">다양한 채널에서 저의 콘텐츠와 일상을 만나보실 수 있습니다.</p>
         
         <div class="links-grid">
-            <a href="https://www.youtube.com/@Art_Ailookbook" class="link-btn yt"><i class="fab fa-youtube"></i> 룩북채널</a>
-            <a href="https://www.youtube.com/@BONG_TOB" class="link-btn yt"><i class="fab fa-youtube"></i> 음악채널</a>
-            <a href="https://www.instagram.com/bongsik2ya" class="link-btn ig"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://blog.naver.com/lovepjs8282" class="link-btn nb"><i class="fas fa-blog"></i> 네이버블로그</a>
-            <a href="https://www.tiktok.com/@lovepjs8282" class="link-btn tt"><i class="fab fa-tiktok"></i> TikTok</a>
+            <!-- 각 버튼에 고유 ID 추가 -->
+            <a href="https://www.youtube.com/@Art_Ailookbook" id="btn-lookbook" class="link-btn yt"><i class="fab fa-youtube"></i> 룩북채널</a>
+            <a href="https://www.youtube.com/@BONG_TOB" id="btn-music" class="link-btn yt"><i class="fab fa-youtube"></i> 음악채널</a>
+            <a href="https://www.instagram.com/bongsik2ya" id="btn-instagram" class="link-btn ig"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://blog.naver.com/lovepjs8282" id="btn-blog" class="link-btn nb"><i class="fas fa-blog"></i> 네이버블로그</a>
+            <a href="https://www.tiktok.com/@lovepjs8282" id="btn-tiktok" class="link-btn tt"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
 
         <div class="footer-contact">
-            <a href="mailto:lovepjs8282@naver.com" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
-            <a href="tel:010-5736-5157" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 전화하기</a>
+            <a href="mailto:lovepjs8282@naver.com" id="btn-email" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-envelope"></i> 이메일</a>
+            <a href="tel:010-5736-5157" id="btn-phone" style="color:#cbd5e1; text-decoration:none;"><i class="fas fa-phone"></i> 전화하기</a>
         </div>
     </section>
 </div>
