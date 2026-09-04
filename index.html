@@ -47,7 +47,7 @@
             text-align: center; 
             position: relative; 
             z-index: 1; 
-            margin-top: 20px;
+            margin-top: 0px;
         }
         
         .links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 35px; }
@@ -56,12 +56,7 @@
             font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center;
             gap: 10px; border: 1px solid rgba(255,255,255,0.1);
         }
-        
-        /* 5개의 버튼 중 마지막 버튼(TikTok)을 2열에서 혼자 남지 않고 전체 너비로 꽉 채우도록 설정 */
-        .link-btn:nth-child(5) {
-            grid-column: span 2;
-        }
-        
+            
         .footer-contact { 
             display: flex; justify-content: space-between; margin-top: 50px; 
             padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); 
